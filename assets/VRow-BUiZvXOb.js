@@ -1,0 +1,1 @@
+import{b as e,h as t,p as n,t as r,u as i}from"./index-CxZyvX6R.js";var a={props:{justify:{type:String,default:`flex-start`}}};function o(r,a,o,s,c,l){return n(),i(`div`,{class:`row`,style:e({display:`flex`,justifyContent:o.justify})},[t(r.$slots,`default`,{},void 0,!0)],4)}var s=r(a,[[`render`,o],[`__scopeId`,`data-v-87ad0f4b`]]);export{s as default};

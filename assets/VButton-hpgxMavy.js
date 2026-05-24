@@ -1,0 +1,1 @@
+import{h as e,p as t,t as n,u as r}from"./index-CxZyvX6R.js";var i={},a={class:`button`};function o(n,i){return t(),r(`div`,a,[e(n.$slots,`default`,{},void 0,!0)])}var s=n(i,[[`render`,o],[`__scopeId`,`data-v-5e9215b7`]]);export{s as default};
