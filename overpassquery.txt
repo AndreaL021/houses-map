@@ -1,0 +1,8 @@
+[out:json];
+(
+  way["building"="house"](43.77,7.58,43.81,7.64);
+  way["building"="detached"](43.77,7.58,43.81,7.64);
+  way["building"="villa"](43.77,7.58,43.81,7.64);
+  way["building"="residential"](43.77,7.58,43.81,7.64);
+);
+out center;
