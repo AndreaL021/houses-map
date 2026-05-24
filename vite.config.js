@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/houses-map/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
