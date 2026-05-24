@@ -29,6 +29,8 @@
         </l-popup>
       </l-marker>
     </l-map>
+    <v-overlay v-model="overlay"></v-overlay>
+    <v-snackbar v-model="message"></v-snackbar>
   </div>
 </template>
 <script>
@@ -49,6 +51,8 @@ export default {
       center: [43.79, 7.61],
 
       buildings: [],
+      overlay: false,
+      message: "",
       // leisure=garden
       // way["building"="house"](43.77,7.58,43.81,7.64);
       query: `
@@ -63,6 +67,7 @@ out center;
 
   methods: {
     async fetchBuildings() {
+      this.overlay = true;
       try {
         const response = await fetch(
           "https://overpass-api.de/api/interpreter",
@@ -77,7 +82,10 @@ out center;
         this.buildings = data.elements;
 
         console.log(data.elements);
+        this.overlay = false;
       } catch (error) {
+        this.overlay = false;
+        this.message = error;
         console.error(error);
       }
     },
